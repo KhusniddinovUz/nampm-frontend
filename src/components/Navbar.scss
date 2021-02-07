@@ -1,0 +1,18 @@
+.Navbar {
+  background: #161d6f;
+  color: #ffff;
+  img {
+    border-radius: 50%;
+  }
+  .navs {
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      padding: 20px 20px;
+      color: #ffff;
+      &:hover {
+        background: #1b6ca8;
+      }
+    }
+  }
+}

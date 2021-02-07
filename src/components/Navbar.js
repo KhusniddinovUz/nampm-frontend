@@ -4,12 +4,12 @@ import './Navbar.scss';
 
 const Navbar = () => {
   return (
-    <div className='Navbar'>
-      <div>
-        <img src={logo} alt='PS Logo' width='50' />
+    <div className='Navbar d-flex align-items-center justify-content-around'>
+      <div className='d-flex align-items-center'>
+        <img src={logo} alt='PS Logo' width='50' className='m-1' />
         Presidential School
       </div>
-      <div className='navs'>
+      <div className='navs d-flex align-items-center justify-content-evenly'>
         <a href='/home'>Home</a>
         <a href='/about'>About</a>
         <a href='/news'>News</a>
