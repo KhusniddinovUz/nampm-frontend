@@ -5,8 +5,24 @@
     flex-direction: row;
     flex-wrap: wrap;
     div.card {
+      color: #fff;
+      &:nth-child(odd) {
+        background: #656565;
+      }
+      &:nth-child(even) {
+        background: #161d6f;
+      }
+      div.card-body {
+        padding: 0 10px 10px 10px;
+      }
       width: 30%;
       margin: 10px;
+      .card-img-top {
+        padding: 10px 0;
+        i {
+          font-size: 100px;
+        }
+      }
     }
   }
 }
