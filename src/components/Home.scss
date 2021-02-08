@@ -1,0 +1,12 @@
+.Home {
+  .features {
+    width: 90%;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    div.card {
+      width: 30%;
+      margin: 10px;
+    }
+  }
+}
