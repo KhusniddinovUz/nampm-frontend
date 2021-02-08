@@ -4,7 +4,19 @@ import './Home.scss';
 const Home = () => {
   return (
     <div className='Home'>
-      <div className='showcase'></div>
+      <div className='showcase'>
+        <div className='showcase-text container'>
+          <h1>Presidential School In Namangan</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
+            ut totam animi blanditiis saepe vel.
+          </p>
+          <a href='/about' className='button mt-3'>
+            About
+          </a>
+        </div>
+        <div className='news'></div>
+      </div>
       <div className='features d-flex justify-content-center text-center'>
         <div data-aos='fade-right' className='card'>
           <div className='card-img-top'>
