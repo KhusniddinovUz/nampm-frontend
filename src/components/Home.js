@@ -1,13 +1,10 @@
 import React from 'react';
 import './Home.scss';
-import showcase1 from '../images/Home/showcase1.jpg';
 
 const Home = () => {
   return (
     <div className='Home'>
-      <div className='showcase'>
-        <img src={showcase1} alt='showcase' />
-      </div>
+      <div className='showcase'></div>
       <div className='features d-flex justify-content-center text-center'>
         <div data-aos='fade-right' className='card'>
           <div className='card-img-top'>
