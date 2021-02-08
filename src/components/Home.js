@@ -8,7 +8,7 @@ const Home = () => {
         <img />
       </div>
       <div className='features d-flex justify-content-center text-center'>
-        <div className='card'>
+        <div data-aos='fade-right' className='card'>
           <div className='card-img-top'>
             <i className='fas fa-language' />
           </div>
