@@ -19,7 +19,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='card'>
+        <div data-aos='zoom-in-down' className='card'>
           <div className='card-img-top'>
             <i className='fas fa-school' />
           </div>
@@ -30,7 +30,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='card'>
+        <div data-aos='fade-left' className='card'>
           <div className='card-img-top'>
             <i className='fas fa-globe'></i>
           </div>
@@ -41,7 +41,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='card'>
+        <div data-aos='fade-up-right' className='card'>
           <div className='card-img-top'>
             <i className='fas fa-users' />
           </div>
@@ -52,7 +52,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='card'>
+        <div data-aos='zoom-in-up' className='card'>
           <div className='card-img-top'>
             <i className='fas fa-laptop-code' />
           </div>
@@ -63,7 +63,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='card'>
+        <div data-aos='fade-up-left' className='card'>
           <div className='card-img-top'>
             <i className='fas fa-book-reader' />
           </div>
