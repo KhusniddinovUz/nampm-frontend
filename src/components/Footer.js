@@ -1,4 +1,8 @@
 import './Footer.scss';
+import tg from '../images/Footer/telegram.svg';
+import fb from '../images/Footer/facebook.svg';
+import insta from '../images/Footer/instagram.svg';
+import tw from '../images/Footer/twitter.svg';
 
 const Footer = () => {
   return (
@@ -31,16 +35,16 @@ const Footer = () => {
       </div>
       <div className='footer-icons'>
         <a target='_blank' href='https://t.me/nampmuz'>
-          <i className='fab fa-telegram' />
+          <img width='60' height='60' src={tg} alt='Telegram' />
         </a>
         <a target='_blank' href='https://fb.com/nampmuz'>
-          <i className='fab fa-facebook' />
+          <img width='60' height='60' src={fb} alt='Facebook' />
         </a>
         <a target='_blank' href='https://instagram.com/nampmuz'>
-          <i className='fab fa-instagram' />
+          <img width='60' height='60' src={insta} alt='Instagram' />
         </a>
         <a target='_blank' href='https://twitter.com/nampmuz'>
-          <i className='fab fa-twitter' />
+          <img width='60' height='60' src={tw} alt='Twitter' />
         </a>
       </div>
     </div>
