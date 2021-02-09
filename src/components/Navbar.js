@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div className='Navbar d-flex align-items-center justify-content-around'>
+    <nav className='Navbar d-flex align-items-center justify-content-around'>
       <div className='d-flex align-items-center'>
         <img src={logo} alt='PS Logo' width='50' className='m-1' />
         Presidential School
@@ -16,7 +16,7 @@ const Navbar = () => {
         <NavLink to='/news'>News</NavLink>
         <NavLink to='/admission'>Admission</NavLink>
       </div>
-    </div>
+    </nav>
   );
 };
 

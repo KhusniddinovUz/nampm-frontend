@@ -7,7 +7,7 @@ import tw from '../images/Footer/twitter.svg';
 
 const Footer = () => {
   return (
-    <div className='Footer text-center pb-3'>
+    <footer className='Footer text-center pb-3'>
       <h1 className='mt-3 mb-4'>Presidential School In Namangan</h1>
       <div className='footer-links d-flex'>
         <NavLink to='/about'>About</NavLink>
@@ -48,7 +48,7 @@ const Footer = () => {
           <img width='60' height='60' src={tw} alt='Twitter' />
         </a>
       </div>
-    </div>
+    </footer>
   );
 };
 
