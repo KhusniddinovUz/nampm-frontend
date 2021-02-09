@@ -1,7 +1,7 @@
 .Footer {
   background-color: #161d6f;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1.5fr 1fr;
   h1 {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -32,7 +32,6 @@
   .footer-icons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     a {
       margin-left: 20px;
