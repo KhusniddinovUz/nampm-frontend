@@ -1,10 +1,10 @@
-import React from 'react';
+import './Footer.scss';
 
 const Footer = () => {
   return (
-    <div className='Footer'>
-      <h1>Presidential School In Namangan</h1>
-      <div className='footer-links'>
+    <div className='Footer text-center pb-3'>
+      <h1 className='mt-3 mb-4'>Presidential School In Namangan</h1>
+      <div className='footer-links d-flex'>
         <a href='/about'>About</a>
         <a href='/news'>News</a>
         <a href='/admission'>Admission</a>
