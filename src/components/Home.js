@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.scss';
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -11,9 +12,9 @@ const Home = () => {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
             ut totam animi blanditiis saepe vel.
           </p>
-          <a href='/about' className='button mt-3'>
+          <NavLink to='/about' className='button mt-3'>
             About
-          </a>
+          </NavLink>
         </div>
         <div className='news'></div>
       </div>

@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import './Footer.scss';
 import tg from '../images/Footer/telegram.svg';
 import fb from '../images/Footer/facebook.svg';
@@ -9,9 +10,9 @@ const Footer = () => {
     <div className='Footer text-center pb-3'>
       <h1 className='mt-3 mb-4'>Presidential School In Namangan</h1>
       <div className='footer-links d-flex'>
-        <a href='/about'>About</a>
-        <a href='/news'>News</a>
-        <a href='/admission'>Admission</a>
+        <NavLink to='/about'>About</NavLink>
+        <NavLink to='/news'>News</NavLink>
+        <NavLink to='/admission'>Admission</NavLink>
       </div>
       <div className='contact'>
         <ul className='contact-ul'>

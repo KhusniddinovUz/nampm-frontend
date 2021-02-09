@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../logo.jpg';
 import './Navbar.scss';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -10,10 +11,10 @@ const Navbar = () => {
         Presidential School
       </div>
       <div className='navs d-flex align-items-center justify-content-evenly'>
-        <a href='/home'>Home</a>
-        <a href='/about'>About</a>
-        <a href='/news'>News</a>
-        <a href='/admission'>Admission</a>
+        <NavLink to='/home'>Home</NavLink>
+        <NavLink to='/about'>About</NavLink>
+        <NavLink to='/news'>News</NavLink>
+        <NavLink to='/admission'>Admission</NavLink>
       </div>
     </div>
   );
