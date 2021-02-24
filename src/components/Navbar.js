@@ -15,6 +15,7 @@ const Navbar = () => {
         <NavLink to='/about'>About</NavLink>
         <NavLink to='/news'>News</NavLink>
         <NavLink to='/admission'>Admission</NavLink>
+        <div className='animation start-home'></div>
       </div>
     </nav>
   );
