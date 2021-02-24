@@ -24,20 +24,32 @@
     padding: 50px 10px;
     flex-direction: row;
     flex-wrap: wrap;
+    row-gap: 30px;
     div.card {
-      color: #fff;
+      width: 25%;
+      margin: 10px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      transition: 0s;
+      &:hover {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      }
       &:nth-child(odd) {
-        background: #c70039;
+        i {
+          color: #c70039;
+        }
       }
       &:nth-child(even) {
-        background: #161d6f;
+        i {
+          color: #161d6f;
+        }
       }
       div.card-body {
+        p {
+          color: black !important;
+        }
         padding: 0 10px 10px 10px;
       }
-      width: 30%;
-      margin: 10px;
-      .card-img-top {
+      div.card-img-top {
         padding: 30px 0;
         i {
           font-size: 100px;
