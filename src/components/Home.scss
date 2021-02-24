@@ -21,8 +21,7 @@
     }
   }
   .features {
-    width: 90%;
-    margin: auto;
+    padding: 50px 10px;
     flex-direction: row;
     flex-wrap: wrap;
     div.card {
@@ -39,7 +38,7 @@
       width: 30%;
       margin: 10px;
       .card-img-top {
-        padding: 10px 0;
+        padding: 30px 0;
         i {
           font-size: 100px;
         }

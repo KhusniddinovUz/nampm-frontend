@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className='Navbar d-flex align-items-center justify-content-around'>
+    <nav className='Navbar sticky-top d-flex align-items-center justify-content-around'>
       <div className='d-flex align-items-center'>
         <img src={logo} alt='PS Logo' width='50' className='m-1' />
         Presidential School
