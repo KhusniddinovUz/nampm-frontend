@@ -7,6 +7,11 @@
     .footer-section {
       &.about {
         padding-right: 0;
+        .contact {
+          i {
+            margin-right: 10px;
+          }
+        }
       }
       flex: 1;
       padding: 25px;
@@ -85,6 +90,9 @@
           padding: 10px;
           border: none;
           outline: none;
+        }
+        textarea {
+          resize: none;
         }
         button {
           background: #05f7ff;

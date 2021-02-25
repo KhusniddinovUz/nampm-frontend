@@ -14,13 +14,14 @@ const Footer = () => {
           </p>
           <div className='contact'>
             <div className='p-1'>
-              <i class='fas fa-phone'></i> &nbsp; 99 XXX XX XX
+              <i className='fas fa-phone'></i> +69 226 56 46
             </div>
             <div className='p-1'>
-              <i class='fas fa-envelope'></i> &nbsp; khusniddinovuz@gmail.com
+              <i className='fas fa-envelope'></i> info.nampm@gmail.com
             </div>
             <div className='p-1'>
-              <i class='fas fa-map-marker-alt'></i> &nbsp; Nam City, I.Karimov 1
+              <i className='fas fa-map-marker-alt'></i> Namangan shahar,
+              I.Karimov 1
             </div>
           </div>
         </div>
@@ -38,27 +39,27 @@ const Footer = () => {
               <NavLink to='/news'>News</NavLink>
             </li>
             <li>
-              <NavLink to='/admission'>Addmission</NavLink>
+              <NavLink to='/admission'>Admission</NavLink>
             </li>
           </ul>
           <div class='socials'>
-            <a href='#' id='fb' target='_blank'>
+            <a href='https://facebook.com/nampmuz' id='fb' target='_blank'>
               <i class='fab fa-facebook'></i>
             </a>
-            <a href='#' id='insta' target='_blank'>
+            <a href='https://instagram.com/nampmuz' id='insta' target='_blank'>
               <i class='fab fa-instagram'></i>
             </a>
-            <a href='#' id='twitter' target='_blank'>
+            <a href='https://twitter.com/nampmuz' id='twitter' target='_blank'>
               <i class='fab fa-twitter'></i>
             </a>
-            <a href='#' id='tube' target='_blank'>
+            <a href='https://bit.ly/nampmuz' id='tube' target='_blank'>
               <i class='fab fa-youtube'></i>
             </a>
           </div>
         </div>
 
         <div class='footer-section contact-form'>
-          <h2 className='text-center mb-4'>Contact us</h2>
+          <h2 className='text-center mb-4'>Contact Us</h2>
           <form className='form-group'>
             <input
               type='email'
