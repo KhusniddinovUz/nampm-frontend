@@ -24,7 +24,7 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background: #240229;
+        background: #34495e;
         z-index: 99;
       }
       .loader {
@@ -68,7 +68,7 @@
         left: 20px;
         right: 20px;
         bottom: 20px;
-        background: #240229;
+        background: #34495e;
         border-radius: 50%;
       }
 
@@ -90,7 +90,7 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root" style="display: none"></div>
+    <div id="root"></div>
     <div class="wrapper">
       <div class="loader">
         <span></span>
@@ -104,6 +104,7 @@
       (function ($) {
         'use strict';
         $(window).on('load', function () {
+          document.getElementById('root').style.display = 'none';
           setTimeout(() => {
             $('.wrapper').fadeOut('slow');
             document.getElementById('root').style.display = 'block';
