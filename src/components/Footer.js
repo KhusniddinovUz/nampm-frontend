@@ -1,11 +1,34 @@
 import { NavLink } from 'react-router-dom';
 import './Footer.scss';
+import { useState, useRef } from 'react';
+import axios from 'axios';
+import { url } from '../data/url';
 
 const Footer = () => {
+  const [loading, setLoading] = useState(false);
+  const email = useRef('noone@gmail.com');
+  const message = useRef('Nothing to say');
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const mail = { email: email.current.value, message: message.current.value };
+    setLoading(true);
+    axios
+      .post(`${url}/sendmessage/`, mail)
+      .then(() => {
+        setLoading(false);
+        email.current.value = '';
+        message.current.value = '';
+      })
+      .catch(() => {
+        setLoading(false);
+      });
+  };
+
   return (
-    <footer class='footer'>
-      <div class='footer-content'>
-        <div class='footer-section about pr-0'>
+    <footer className='footer'>
+      <div className='footer-content'>
+        <div className='footer-section about pr-0'>
           <h1 className='text-center mb-3'>Presidential School</h1>
           <p className='p-2'>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
@@ -26,7 +49,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div class='footer-section links'>
+        <div className='footer-section links'>
           <h2 className='text-center mb-2'>Quick Links</h2>
           <ul>
             <li>
@@ -42,39 +65,49 @@ const Footer = () => {
               <NavLink to='/admission'>Admission</NavLink>
             </li>
           </ul>
-          <div class='socials'>
+          <div className='socials'>
             <a href='https://facebook.com/nampmuz' id='fb' target='_blank'>
-              <i class='fab fa-facebook'></i>
+              <i className='fab fa-facebook'></i>
             </a>
             <a href='https://instagram.com/nampmuz' id='insta' target='_blank'>
-              <i class='fab fa-instagram'></i>
+              <i className='fab fa-instagram'></i>
             </a>
             <a href='https://twitter.com/nampmuz' id='twitter' target='_blank'>
-              <i class='fab fa-twitter'></i>
+              <i className='fab fa-twitter'></i>
             </a>
             <a href='https://bit.ly/nampmuz' id='tube' target='_blank'>
-              <i class='fab fa-youtube'></i>
+              <i className='fab fa-youtube'></i>
             </a>
           </div>
         </div>
 
-        <div class='footer-section contact-form'>
+        <div className='footer-section contact-form'>
           <h2 className='text-center mb-4'>Contact Us</h2>
-          <form className='form-group'>
+          <form className='form-group' onSubmit={onSubmit}>
             <input
+              ref={email}
+              required={true}
               type='email'
               className='contact-input mb-2'
               placeholder='Email address'
             />
             <textarea
+              ref={message}
+              required={true}
               rows='4'
               className='contact-input'
               placeholder='Message'
             ></textarea>{' '}
             <br />
-            <button type='submit' class='button'>
-              <i class='fas fa-envelope'></i>
-              Send
+            <button type='submit' className='button'>
+              <i className='fas fa-envelope' hidden={loading ? 'hidden' : ''} />
+              <span hidden={loading ? 'hidden' : ''}>Send</span>
+              <span
+                className='spinner-border spinner-border-sm'
+                role='status'
+                aria-hidden='true'
+                hidden={loading ? '' : 'hidden'}
+              />
             </button>
           </form>
         </div>
