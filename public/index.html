@@ -16,6 +16,17 @@
       crossorigin="anonymous"
     />
     <style>
+      .wrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #240229;
+        z-index: 99;
+      }
       .loader {
         position: relative;
         width: 200px;
@@ -70,6 +81,8 @@
         }
       }
     </style>
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Presidential School In Namangan" />
@@ -77,13 +90,27 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <div class="loader">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+    <div id="root" style="display: none"></div>
+    <div class="wrapper">
+      <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
+    <!-- Pre Loader Settings -->
+    <script>
+      (function ($) {
+        'use strict';
+        $(window).on('load', function () {
+          setTimeout(() => {
+            $('.wrapper').fadeOut('slow');
+            document.getElementById('root').style.display = 'block';
+          }, 500);
+        });
+      })(jQuery);
+    </script>
     <!-- Bootstrap CDN -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
