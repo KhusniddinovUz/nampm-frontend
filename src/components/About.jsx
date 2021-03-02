@@ -27,7 +27,7 @@ const About = () => {
           </div>
           <div>
             <i className='fal fa-lightbulb-on' />
-            <span className='st-number'>4</span>
+            <span className='st-number'>5</span>
             <p className='st-text'>Available Courses</p>
           </div>
           <div>

@@ -18,17 +18,28 @@
     }
   }
   section {
-    padding: 30px 0 30px 0;
+    padding: 40px 0 40px 0;
     div.statistics {
       display: flex;
       justify-content: space-evenly;
       & > div {
+        padding: 15px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: #000;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        p,
+        span {
+          color: #000;
+          margin: 0;
+        }
         i {
+          color: #000;
           font-size: 40px;
         }
       }

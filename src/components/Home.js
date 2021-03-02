@@ -21,7 +21,7 @@ const Home = () => {
       <div className='features d-flex justify-content-evenly text-center'>
         <div data-aos='fade-right' className='card'>
           <div className='card-img-top'>
-            <i className='fas fa-language' />
+            <i className='fal fa-language' />
           </div>
           <div className='card-body'>
             <p className='card-text'>
@@ -32,7 +32,7 @@ const Home = () => {
         </div>
         <div data-aos='zoom-in-down' className='card'>
           <div className='card-img-top'>
-            <i className='fas fa-school' />
+            <i className='fal fa-school' />
           </div>
           <div className='card-body'>
             <p className='card-text'>
@@ -43,7 +43,7 @@ const Home = () => {
         </div>
         <div data-aos='fade-left' className='card'>
           <div className='card-img-top'>
-            <i className='fas fa-globe'></i>
+            <i className='fal fa-globe'></i>
           </div>
           <div className='card-body'>
             <p className='card-text'>
@@ -54,7 +54,7 @@ const Home = () => {
         </div>
         <div data-aos='fade-up-right' className='card'>
           <div className='card-img-top'>
-            <i className='fas fa-users' />
+            <i className='fal fa-users' />
           </div>
           <div className='card-body'>
             <p className='card-text'>
@@ -65,7 +65,7 @@ const Home = () => {
         </div>
         <div data-aos='zoom-in-up' className='card'>
           <div className='card-img-top'>
-            <i className='fas fa-laptop-code' />
+            <i className='fal fa-laptop-code' />
           </div>
           <div className='card-body'>
             <p className='card-text'>
@@ -76,7 +76,7 @@ const Home = () => {
         </div>
         <div data-aos='fade-up-left' className='card'>
           <div className='card-img-top'>
-            <i className='fas fa-book-reader' />
+            <i className='fal fa-book-reader' />
           </div>
           <div className='card-body'>
             <p className='card-text'>
