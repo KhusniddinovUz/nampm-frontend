@@ -1,0 +1,37 @@
+.About {
+  overflow: hidden;
+  main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/Home/showcase.jpg') center center/cover no-repeat;
+    & > div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      p {
+        width: 80%;
+        margin: auto;
+      }
+    }
+  }
+  section {
+    padding: 30px 0 30px 0;
+    div.statistics {
+      display: flex;
+      justify-content: space-evenly;
+      & > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        i {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
