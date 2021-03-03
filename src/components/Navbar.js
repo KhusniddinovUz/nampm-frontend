@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className='Navbar sticky-top d-flex align-items-center justify-content-around'>
       <div className='d-flex align-items-center'>
         <img src={logo} alt='PS Logo' width='50' className='m-1' />
-        Presidential School
+        Namangan Presidential School
       </div>
       <div className='navs d-flex align-items-center justify-content-evenly'>
         <NavLink to='/home'>Home</NavLink>
